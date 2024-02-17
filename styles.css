@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
   margin: 0;
   padding: 0;
 }
@@ -27,11 +27,49 @@ body {
 nav {
   background: var(--sidebar-bg);
   color: var(--secondary-text);
+  padding: 24px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+  z-index: 12;
+}
+
+nav ul {
+  margin-top: 54px;
+  margin-bottom: 75px;
+}
+
+.branding h1 {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 nav a {
   color: var(--highlight-text);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 15px;
+}
+
+.active a {
+  color: var(--secondary-text);
+  border-left: 2px solid var(--secondary-text);
+}
+
+nav a:hover {
+  color: var(--secondary-text);
+  border-left: 2px solid var(--secondary-text);
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+nav a svg {
+  width: 20px;
 }
 
 main {
