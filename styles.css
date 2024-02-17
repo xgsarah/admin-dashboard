@@ -98,6 +98,7 @@ header {
 .top-header {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  margin-bottom: 12px;
 }
 
 .search-bar {
@@ -189,11 +190,20 @@ header {
 }
 
 /* header END */
+/* main START */
+
+.title h2 {
+  font-size: 18px;
+}
+
+.title {
+  margin-bottom: 12px;
+}
 
 .main-content {
   display: grid;
   grid-template-columns: 8fr 4fr;
-  padding: 32px 20px;
+  padding: 32px 0;
   gap: 20px;
 }
 
@@ -206,6 +216,38 @@ header {
 .book-card {
   background: var(--header-bg);
   height: 200px;
+  border-radius: 12px;
+  border-left: 8px solid var(--highlight-text);
+  padding: 24px 12px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card-title {
+  font-weight: 900;
+}
+
+.card-author {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.card-description {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+
+.card-actions svg {
+  width: 20px;
+  margin-left: 20px;
 }
 
 .announcements {
@@ -221,3 +263,5 @@ header {
   background: var(--header-bg);
   height: 80px;
 }
+
+/* main END */
