@@ -6,6 +6,80 @@
   padding: 0;
 }
 
+:root {
+  --sidebar-bg: #265073;
+  --header-bg: #9ad0c2;
+  --main-bg: #f1fada;
+  --primary-text: #3c3633;
+  --secondary-text: #fff7d4;
+  --highlight-text: #f6d776;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
+  color: var(--primary-text);
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  grid-template-rows: 1fr;
+  height: 100vh;
+}
+
+nav {
+  background: var(--sidebar-bg);
+  color: var(--secondary-text);
+}
+
+nav a {
+  color: var(--highlight-text);
+  text-decoration: none;
+}
+
+main {
+  background: var(--main-bg);
+}
+
+header {
+  background: var(--header-bg);
+}
+
+.top-header {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+}
+
+.bottom-header {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  padding: 32px 20px;
+  gap: 20px;
+}
+
+.reading-list .contents {
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  gap: 12px;
+}
+
+.book-card {
+  background: var(--header-bg);
+  height: 200px;
+}
+
+.announcements {
+  margin-bottom: 57px;
+}
+
+.announcement {
+  background: var(--header-bg);
+  height: 100px;
+}
+
+.trending-book {
+  background: var(--header-bg);
+  height: 80px;
 }
