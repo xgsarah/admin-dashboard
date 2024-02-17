@@ -213,28 +213,72 @@
     </nav>
     <main>
       <header>
-        <section class="top-header">
-          <div class="search-bar">
-            <input type="text" name="search" id="search" />
-          </div>
-          <div class="profile">
-            <div class="notification">notif</div>
-            <div class="account">
-              <div class="profile-picture">me</div>
+        <div class="container">
+          <section class="top-header">
+            <div class="search-bar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+              <input type="text" name="search" id="search" />
+            </div>
+            <div class="profile">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5"
+                />
+              </svg>
+
+              <img
+                src="https://avatars.githubusercontent.com/u/157891340?v=4"
+                alt="Profile Picture"
+              />
               <div class="profile-name">Sarah Q.</div>
             </div>
-          </div>
-        </section>
-        <section class="bottom-header">
-          <div class="profile-card"></div>
-          <div class="actions">
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
-          </div>
-        </section>
+          </section>
+          <section class="bottom-header">
+            <div class="profile-card">
+              <div class="profile-picture">
+                <img
+                  src="https://avatars.githubusercontent.com/u/157891340?v=4"
+                  alt="Profile Picture"
+                />
+              </div>
+              <div class="profile-info">
+                <div class="greetings">Hi there,</div>
+                <div class="name">
+                  Sarah Q. <span class="username">(@xgsarah)</span>
+                </div>
+              </div>
+            </div>
+            <div class="actions">
+              <button>New</button>
+              <button>Upload</button>
+              <button>Share</button>
+            </div>
+          </section>
+        </div>
       </header>
-      <section class="container">
+      <section class="main-content">
         <section class="reading-list">
           <div class="title"><h2>Your Reading List</h2></div>
           <div class="contents">
