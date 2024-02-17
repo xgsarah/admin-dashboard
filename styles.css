@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
   margin: 0;
   padding: 0;
 }
@@ -202,7 +202,7 @@ header {
 
 .main-content {
   display: grid;
-  grid-template-columns: 8fr 4fr;
+  grid-template-columns: 9fr 3fr;
   padding: 32px 0;
   gap: 20px;
 }
@@ -221,6 +221,7 @@ header {
   padding: 24px 12px;
   box-sizing: border-box;
   position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
@@ -254,9 +255,32 @@ header {
   margin-bottom: 57px;
 }
 
-.announcement {
+.announcements .contents {
   background: var(--header-bg);
-  height: 100px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 42px 32px;
+  box-sizing: border-box;
+}
+
+.announcement h3 {
+  font-size: 14px;
+}
+
+.announcement p {
+  font-size: 12px;
+}
+
+.announcement {
+  border-bottom: 1px solid var(--secondary-text);
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+}
+
+.announcement:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .trending-book {
