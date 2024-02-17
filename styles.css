@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
-  outline: 1px dotted red;
+  /* outline: 1px dotted red; */
   margin: 0;
   padding: 0;
 }
 
 :root {
   --sidebar-bg: #265073;
-  --header-bg: #9ad0c2;
+  --header-bg: #bce7dc;
   --main-bg: #f1fada;
   --primary-text: #3c3633;
   --secondary-text: #fff7d4;
@@ -26,11 +26,15 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1080px;
+  max-width: 2000px;
   margin: auto;
 }
 
 /* nav START */
+
+#menu {
+  display: none;
+}
 
 nav {
   background: var(--sidebar-bg);
@@ -189,6 +193,16 @@ header {
   margin-left: 12px;
 }
 
+.actions button:hover {
+  background: var(--highlight-text);
+  color: var(--sidebar-bg);
+}
+
+img:hover {
+  border: 2px solid #f6d776;
+  box-sizing: border-box;
+}
+
 /* header END */
 /* main START */
 
@@ -202,8 +216,8 @@ header {
 
 .main-content {
   display: grid;
-  grid-template-columns: 9fr 3fr;
-  padding: 32px 0;
+  grid-template-columns: 9fr 3.5fr;
+  padding: 32px 20px;
   gap: 20px;
 }
 
@@ -215,13 +229,17 @@ header {
 
 .book-card {
   background: var(--header-bg);
-  height: 200px;
+  height: 266px;
   border-radius: 12px;
   border-left: 8px solid var(--highlight-text);
   padding: 24px 12px;
   box-sizing: border-box;
   position: relative;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.book-card:hover {
+  border-left: 8px solid var(--sidebar-bg);
 }
 
 .card-title {
@@ -249,6 +267,10 @@ header {
 .card-actions svg {
   width: 20px;
   margin-left: 20px;
+}
+
+.card-actions svg:hover {
+  color: var(--sidebar-bg);
 }
 
 .announcements {
@@ -295,6 +317,7 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .author-info h3 {
@@ -314,5 +337,37 @@ header {
   display: flex;
 }
 
-/* .author-info */
 /* main END */
+
+@media only screen and (max-width: 1020px) {
+  nav {
+    display: none;
+  }
+
+  .contents {
+    width: 100%;
+  }
+
+  .book-card,
+  .search-bar {
+    margin-bottom: 24px;
+  }
+
+  .top-header,
+  .bottom-header,
+  .reading-list .contents,
+  .main-content,
+  .reading-list,
+  .contents,
+  body {
+    display: block;
+  }
+
+  h2 {
+    margin: 24px 0;
+  }
+
+  #menu {
+    display: block;
+  }
+}
