@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
-  /* outline: 1px dotted red; */
+  outline: 1px dotted red;
   margin: 0;
   padding: 0;
 }
@@ -283,9 +283,36 @@ header {
   padding-bottom: 0;
 }
 
-.trending-book {
+.trending .contents {
   background: var(--header-bg);
-  height: 80px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 20px 32px;
+  box-sizing: border-box;
 }
 
+.trending-author {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.author-info h3 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.author-info p {
+  font-size: 12px;
+}
+
+.author-img img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #265073;
+  display: flex;
+}
+
+/* .author-info */
 /* main END */
